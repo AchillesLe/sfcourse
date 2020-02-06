@@ -18,10 +18,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ path('custom',{name:'achilles'}) }}">Custom</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('post.index') }}">Post</a>
+                    </li>
                 </ul>
             </div>
         </nav>
-        {% block body %}{% endblock %}
+        <div class="container">
+            {% block body %}{% endblock %}
+        </div>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

@@ -1,0 +1,23 @@
+{% extends ('base.html.twig') %}
+
+{% block title %}Hello PostController!{% endblock %}
+
+{% block body %}
+    <h2> List of all posts </h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Title</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in posts %}
+                <tr>
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.title }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
